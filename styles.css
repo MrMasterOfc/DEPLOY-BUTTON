@@ -1,0 +1,118 @@
+/* Importing the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input styling */
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Message div styling */
+#message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive design for mobile, tablet, and desktop */
+@media (max-width: 767px) {
+    .container {
+        padding: 15px 20px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 20px 25px;
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 20px 30px;
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
